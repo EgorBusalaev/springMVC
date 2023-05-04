@@ -16,6 +16,9 @@ Your name: ${employee.name}
 Your surname: ${employee.surname}
 <br><br>
 Your age: ${employee.age}
+<br><br>
+
+Your Department: ${employee.department}
 <br>
 </body>
 

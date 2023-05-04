@@ -18,7 +18,21 @@
     <br><br>
     Age <form:input path="age"/>
     <br>
+    <br>
+
+
+    Department<form:select path="department">
+    <form:option value="Infirmation tehnologies" label="IT"/>
+    <form:option value="Human Resourses" label="HR"/>
+    <form:option value="Sales" label="Sales"/>
+
+
+
+</form:select>
+    <br>
+    <br>
     <input type="submit" value="ok"/>
+    <br>
 </form:form>
 
 
