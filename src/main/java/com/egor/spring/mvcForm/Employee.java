@@ -11,6 +11,7 @@ public class Employee {
     private Map<String,String> departments;
     private String carBrand;
     private Map<String,String> carBrands;
+    private String[] Language;
 
     public Employee() {
         departments = new HashMap<>();
@@ -79,6 +80,14 @@ public class Employee {
 
     public void setCarBrands(Map<String, String> carBrands) {
         this.carBrands = carBrands;
+    }
+
+    public String[] getLanguage() {
+        return Language;
+    }
+
+    public void setLanguage(String[] language) {
+        Language = language;
     }
 
     @Override
