@@ -19,7 +19,10 @@ Your age: ${employee.age}
 <br><br>
 
 Your Department: ${employee.department}
-<br>
+<br><br>
+Your car: ${employee.carBrand}
+<br><br>
+
 </body>
 
 </html>

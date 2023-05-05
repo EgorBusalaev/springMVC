@@ -22,17 +22,22 @@
 
 
     Department<form:select path="department">
-    <form:option value="Infirmation tehnologies" label="IT"/>
-    <form:option value="Human Resourses" label="HR"/>
-    <form:option value="Sales" label="Sales"/>
+    <form:options items="${employee.departments}"/>
 
 
 
 </form:select>
     <br>
+Which car do you want?
     <br>
+
+<form:radiobuttons path="carBrand" items="${employee.carBrands}"/>
+
+    <br> <br>
     <input type="submit" value="ok"/>
     <br>
+
+
 </form:form>
 
 
