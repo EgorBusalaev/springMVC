@@ -35,9 +35,7 @@
     <br> <br>
 
     Foreign language(s)
-    EN <form:checkbox path="language" value="English"/>
-    GE <form:checkbox path="language" value="German"/>
-    FR <form:checkbox path="language" value="Fraanch"/>
+  <form:checkboxes path="language" items="${employee.languageList}"/>
 
 
     <br> <br>
