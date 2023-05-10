@@ -12,9 +12,10 @@
 <form:form action="showDetail" modelAttribute="employee">
 
     Name <form:input path="name"/>
-<form:errors path="name"/>
+    <form:errors path="name"/>
     <br><br>
     Surname <form:input path="surname"/>
+    <form:errors path="surname"/>
     <br><br>
     Age <form:input path="age"/>
     <br>
@@ -35,7 +36,7 @@
     <br> <br>
 
     Foreign language(s)
-  <form:checkboxes path="language" items="${employee.languageList}"/>
+    <form:checkboxes path="language" items="${employee.languageList}"/>
 
 
     <br> <br>

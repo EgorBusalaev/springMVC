@@ -1,5 +1,8 @@
 package com.egor.spring.mvcForm;
 
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotEmpty;
+import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 import java.util.HashMap;
 import java.util.Map;
@@ -7,6 +10,9 @@ import java.util.Map;
 public class Employee {
     @Size(min = 2, max = 6, message = "must be min 2 symbol and max 6 ")
     private String name;
+   // @NotNull(message = "заполни фамилию")
+   // @NoEmpty(message = "заполни фамилию")
+   @NotBlank(message = "surname incorrect")
     private String surname;
     private int age;
     private String department;

@@ -23,6 +23,7 @@ public class MyController {
 }
 @RequestMapping("/showDetail")
     public String showEmpDetails(@Valid @ModelAttribute("employee") Employee employee, BindingResult bindingResult){
+    System.out.println(employee.getSurname().length());
     if(bindingResult.hasErrors())
         return "ask-emp-details-view";
 else {
