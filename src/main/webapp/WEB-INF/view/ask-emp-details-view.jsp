@@ -22,7 +22,9 @@
     <br><br>
     Phone number <form:input path="phoneNumber"/>
     <form:errors path="phoneNumber"/>
-
+    <br><br>
+    email <form:input path="email"/>
+    <form:errors path="email"/>
     <br><br>
     Department<form:select path="department">
     <form:options items="${employee.departments}"/>

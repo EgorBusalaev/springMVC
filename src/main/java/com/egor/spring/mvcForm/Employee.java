@@ -1,5 +1,7 @@
 package com.egor.spring.mvcForm;
 
+import com.egor.spring.mvcForm.validation.CheckEmail;
+
 import javax.validation.constraints.*;
 import java.util.HashMap;
 import java.util.Map;
@@ -7,21 +9,23 @@ import java.util.Map;
 public class Employee {
     @Size(min = 2, max = 6, message = "must be min 2 symbol and max 6 ")
     private String name;
-   // @NotNull(message = "заполни фамилию")
-   // @NoEmpty(message = "заполни фамилию")
-   @NotBlank(message = "surname incorrect")
+    // @NotNull(message = "заполни фамилию")
+    // @NoEmpty(message = "заполни фамилию")
+    @NotBlank(message = "surname incorrect")
     private String surname;
-   @Min(value = 18, message = "age 18+")
-   @Max(value = 65,message = "age 65-")
+    @Min(value = 18, message = "age 18+")
+    @Max(value = 65, message = "age 65-")
     private int age;
     private String department;
-    private Map<String,String> departments;
+    private Map<String, String> departments;
     private String carBrand;
-    private Map<String,String> carBrands;
+    private Map<String, String> carBrands;
     private String[] Language;
-    private Map<String,String> languageList;
+    private Map<String, String> languageList;
     @Pattern(regexp = "\\d{3}-\\d{2}-\\d{2}", message = "please enter number to format XXX-XX-XX")
     private String phoneNumber;
+    @CheckEmail(value = "xyz", message = "email end xyz")
+    private String email;
 
     public Employee() {
         departments = new HashMap<>();
@@ -118,6 +122,14 @@ public class Employee {
 
     public void setPhoneNumber(String phoneNumber) {
         this.phoneNumber = phoneNumber;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
     }
 
     @Override
