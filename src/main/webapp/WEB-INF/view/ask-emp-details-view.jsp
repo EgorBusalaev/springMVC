@@ -19,10 +19,11 @@
     <br><br>
     Age <form:input path="age"/>
     <form:errors path="age"/>
-    <br>
-    <br>
+    <br><br>
+    Phone number <form:input path="phoneNumber"/>
+    <form:errors path="phoneNumber"/>
 
-
+    <br><br>
     Department<form:select path="department">
     <form:options items="${employee.departments}"/>
 

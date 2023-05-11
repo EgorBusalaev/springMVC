@@ -20,6 +20,8 @@ public class Employee {
     private Map<String,String> carBrands;
     private String[] Language;
     private Map<String,String> languageList;
+    @Pattern(regexp = "\\d{3}-\\d{2}-\\d{2}", message = "please enter number to format XXX-XX-XX")
+    private String phoneNumber;
 
     public Employee() {
         departments = new HashMap<>();
@@ -108,6 +110,14 @@ public class Employee {
 
     public void setLanguageList(Map<String, String> languageList) {
         this.languageList = languageList;
+    }
+
+    public String getPhoneNumber() {
+        return phoneNumber;
+    }
+
+    public void setPhoneNumber(String phoneNumber) {
+        this.phoneNumber = phoneNumber;
     }
 
     @Override
