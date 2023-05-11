@@ -18,6 +18,7 @@
     <form:errors path="surname"/>
     <br><br>
     Age <form:input path="age"/>
+    <form:errors path="age"/>
     <br>
     <br>
 
